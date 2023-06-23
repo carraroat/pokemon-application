@@ -12,10 +12,16 @@ This project is a web application that displays a list of Pokemon names retrieve
 Follow these steps to run the project on your local machine:
 
 1. Install all the dependencies by running the following command:
-   yarn
+
+```
+yarn
+```
 
 2. Start the project using the following command:
-   npx nx serve density-challenge
+
+```
+npx nx serve density-challenge
+```
 
 3. Open your web browser and navigate to [localhost:4200](http://localhost:4200) to access the project.
 
