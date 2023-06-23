@@ -1,0 +1,5 @@
+export { ReactComponent as Logo } from './logo.svg'
+export { ReactComponent as Pokeball } from './pokeball-lineal.svg'
+export { ReactComponent as PokeballRound } from './pokeball-round.svg'
+export { ReactComponent as ChevronLeft } from './chevron-left.svg'
+export { ReactComponent as ChevronRight } from './chevron-right.svg'

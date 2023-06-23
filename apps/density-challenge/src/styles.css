@@ -1,0 +1,18 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+body > div {
+    flex-grow: 1;
+}
+
+#root {
+    height: 100%;
+}
+/*
+div {
+    flex-grow: 1;
+} */
