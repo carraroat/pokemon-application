@@ -23,7 +23,7 @@ yarn
 npx nx serve density-challenge
 ```
 
-3. Open your web browser and navigate to [localhost:4200](http://localhost:4200) to access the project.
+3. Open your web browser and navigate to [localhost:4200/pokemons](http://localhost:4200/pokemons) to access the project.
 
 **Note:** Node.js must be installed on your machine in order to run the project successfully.
 

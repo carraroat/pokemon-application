@@ -98,7 +98,4 @@ const pokeSlice = createSlice({
     },
 })
 
-export const { nextPage, backPage } = pokeSlice.actions
-
-export const getPoke = (state: IPokemonState) => state
 export default pokeSlice

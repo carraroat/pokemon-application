@@ -8,6 +8,8 @@ export const Layout = styled(Box)`
 
     > div {
         flex: 1;
+        box-sizing: border-box;
+        max-width: 50%;
     }
 `
 
@@ -20,6 +22,7 @@ export const Image = styled(Box)(({ theme }) => ({
     flexDirection: 'column',
 
     '.logo': {
+        minHeight: '20%',
         width: '100%',
         height: 'fit-content',
         alignSelf: 'center',
@@ -29,10 +32,11 @@ export const Image = styled(Box)(({ theme }) => ({
         borderRadius: theme.borderRadius.div,
         boxShadow: `0.375rem 0.375rem 0.6rem 0rem ${theme.palette.grey[600]}`,
         backgroundColor: theme.palette.grey['100'],
+        maxHeight: '65%',
         height: '100%',
         display: 'flex',
-        padding: '1rem',
-        marginTop: '1.5rem',
+        padding: '5%',
+        marginTop: '5%',
         justifyContent: 'center',
     },
 }))

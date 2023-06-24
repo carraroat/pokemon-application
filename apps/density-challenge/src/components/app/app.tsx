@@ -1,13 +1,13 @@
 import { useSelector } from 'react-redux'
 import { Outlet } from 'react-router'
+import { IStore } from '../../global/interfaces/stores'
 import { Layout, Image } from './app.styled'
 import { Logo, Pokeball } from '../../assets'
 import Loader from '../loader/loader'
-import { getPoke } from '../../stores/slices/pokeSlice'
 
 const App = () => {
-    const pSlice = useSelector(getPoke)
-    const { pokemon: _pokemon, fetchPokemon: _fetch } = pSlice
+    const { pokemon } = useSelector((state: IStore) => state)
+    const { pokemon: _pokemon, fetchPokemon: _fetch } = pokemon
 
     return (
         <Layout>
@@ -19,7 +19,7 @@ const App = () => {
                     ) : (
                         <img
                             className="img-pokemon"
-                            alt={_pokemon.name}
+                            alt={_pokemon?.name}
                             src={_pokemon?.image}
                         />
                     )}
