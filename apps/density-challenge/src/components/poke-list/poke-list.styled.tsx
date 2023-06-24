@@ -20,7 +20,7 @@ export const PokeListWrapper = styled(Box)(({ theme }) => ({
         justifyContent: 'center',
         alignItems: 'center',
         borderRadius: '0.5rem',
-        width: '46%',
+        width: '48%',
         margin: '1%',
         cursor: 'pointer',
         boxShadow: `0.125rem 0.125rem 0.25rem ${theme.palette.grey[700]}`,
