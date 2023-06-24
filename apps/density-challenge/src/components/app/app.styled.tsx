@@ -11,6 +11,24 @@ export const Layout = styled(Box)`
         box-sizing: border-box;
         max-width: 50%;
     }
+
+    @media only screen and (max-width: 800px) {
+        display: block;
+
+        > div {
+            margin: 0;
+            max-width: 100%;
+            height: 100%;
+
+            img {
+                width: 100%;
+            }
+
+            &:last-of-type {
+                padding-top: 1rem;
+            }
+        }
+    }
 `
 
 export const Image = styled(Box)(({ theme }) => ({
