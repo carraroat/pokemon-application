@@ -71,7 +71,9 @@ const PokeDetails = () => {
             {p?.stats.map((x) => (
                 <Typography variant="caption" key={x.key}>
                     {x.key}
-                    <Stat width={`${x.value}%`} />
+                    <Stat
+                        width={`${(x.value as number) > 100 ? 100 : x.value}%`}
+                    />
                 </Typography>
             ))}
         </Container>
